@@ -1,9 +1,11 @@
-import { Candidate } from "./deps.ts";
+import {
+  Candidate,
+} from "https://deno.land/x/ddc_vim@v0.4.1/types.ts#^";
 import {
   bench,
   runBenchmarks,
 } from "https://deno.land/std@0.105.0/testing/bench.ts";
-import { filterWrapper } from "./test.ts";
+import { filterWrapper } from "./matcher_editdistance_test.ts";
 
 function gatherCandidates(
   dicts: string[],
